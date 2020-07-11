@@ -20,16 +20,23 @@ h1 {
 }
 .card {
 	position: relative;
+	display: block;
 	background-color: grey;
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 .title {
+	position: absolute;
+	right: 0px;
 	font-weight: 600;
-	border: 1px solid black;
+	border: 2px solid black;
 	text-align: center;
 	padding: 0px 16px 0px 16px;
+	border-top: 0px;
+	border-right: 0px;
+	text-align: center;
 	float: right;
+	margin-top: 0px;
 }
 
 .chicken {
@@ -44,7 +51,8 @@ h1 {
 }
 .text {
 	clear: right;
-	padding: 4px 8px 8px 8px;
+	margin-top: 24px;
+	padding: 4px 24px 8px 8px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -55,10 +63,6 @@ h1 {
 		grid-row-gap: 20px;
 	}
 
-	.card {
-		background-color: grey;
-		border: 1px solid black;
-	}
 	.card-sushi {
 		grid-column: 1 / span 2;
 	}
@@ -70,10 +74,5 @@ h1 {
 		grid-template-columns: auto;
 		padding: 10px;
 		grid-row-gap: 20px;
-	}
-
-	.card {
-		background-color: grey;
-		border: 1px solid black;
 	}
 }
